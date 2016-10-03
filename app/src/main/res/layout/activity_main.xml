@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.byethost31.mobpro.tgsmobpro.MainActivity">
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logohimatif"
+        android:id="@+id/imageView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="25dp"
+        android:textSize="17dp"
+        android:text="Username"
+        android:textStyle="bold"
+        android:id="@+id/usrname" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/usrname"
+        android:id="@+id/txtname" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtname"
+        android:textSize="17dp"
+        android:text="Password"
+        android:textStyle="bold"
+        android:id="@+id/pass"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:id="@+id/txtpass" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpass"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true">
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="@color/colorAccent"
+        android:id="@+id/btnregister"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/txtpass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/btnlogin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linearLayoutVer">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="35dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+             />
+        <Button
+            android:id="@+id/btnGplus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/gplus"
+            android:drawableLeft="@drawable/ic_gplus"
+            android:drawableStart="@drawable/ic_gplus"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:text="@string/login_gplus"
+            android:textAllCaps="false"
+            android:textColor="@color/bg"
+            />
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginButton"
+            android:layout_marginTop="10dp"
+            android:background="@color/twitter"
+            android:drawableLeft="@drawable/ic_twitter"
+            android:drawableStart="@drawable/ic_twitter"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:text="@string/log_in_with_twitter"
+            android:textAllCaps="false"
+            android:textColor="@color/bg" />
+
+    </LinearLayout>
+</RelativeLayout>

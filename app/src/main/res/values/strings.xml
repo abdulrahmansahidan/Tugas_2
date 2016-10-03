@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Form Login</string>
+    <string name="facebook_app_id">1114174891964975</string>
+    <string name="log_in_with_twitter">Log in with twitter</string>
+    <string name="login_gplus">Log in with G+</string>
+    <string name="err_msg_pass">Please Insert Your Password.</string>
+    <string name="err_msg_username">Please Insert Your Username</string>
+    <string name="email">Email</string>
+    <string name="logout_fb">Log Out Facebook</string>
+    <string name="signup">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="logo">Logo</string>
+    <string name="batal">Batal</string>
+    <string name="simpan">Simpan</string>
+</resources>
